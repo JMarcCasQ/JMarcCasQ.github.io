@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <div class="d-flex justify-content-between text-white">
+      <div class="p-2 mt-3" id="jmc">JMC</div>
+      <div class="p-2 mt-5">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- content for projects  -->
+    <div class="container text-white">
+      <div class="container text-center mt-5 mb-3">
+        <span id="projects_q">Projects</span>
+      </div>
+
+      <!-- bkk  -->
+      <div id="bkk" class="mt-5 mb-5">
+        <img src="images/Log In.png" id="bkkImg" />
+        <div class="bkk-card-body" id="bkk-card-body">
+          <span class="bkk-title">BKK System</span>
+          <p class="bkk-info">
+            A system for party-list to handle the information and help the
+            residents of Batangas.
+          </p>
+          <button class="btn btn-success" id="bkkBtn">View Screenshots</button>
+        </div>
+      </div>
+
+      <!-- dashboard  -->
+      <div id="dashboard" class="mt-5 mb-5">
+        <img src="images/dash.png" id="dashImg" />
+        <div class="dash-card-body" id="dash-card-body">
+          <span class="dash-title">Dashboard System</span>
+          <p class="dash-info">
+            A system used by Philippines based company to manage employees
+            profile, attendance, payroll, etc.
+          </p>
+          <button class="btn btn-success" id="dashBtn">View Screenshots</button>
+        </div>
+      </div>
+
+      <!-- sierra  -->
+      <div id="sierra" class="mt-5 mb-5">
+        <img src="images/sierra.png" id="sierraImg" />
+        <div class="sierra-card-body" id="sierra-card-body">
+          <span class="sierra-title">Sierra Pines Dashboard System</span>
+          <p class="sierra-info">
+            A system used by hotel located in Baguio, Philippines to manage
+            hotel employees profile, attendance, payroll, etc.
+          </p>
+          <button class="btn btn-success" id="sierraBtn">
+            View Screenshots
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts  -->
+    <script>
+      $(document).on("click", ".nav-link", function (e) {
+        // $(".nav-link").css("color", "#ffc62a");
+        $(".nav-link").removeClass("active");
+        $(this).addClass("active");
+      });
+    </script>
+  </body>
+</html>
