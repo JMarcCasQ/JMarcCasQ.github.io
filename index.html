@@ -103,7 +103,7 @@
       <div class="p-2 mt-3" id="jmc">JMC</div>
       <div class="p-2 mt-5">
         <ul class="nav justify-content-center">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
@@ -130,11 +130,11 @@
     </div>
 
     <script>
-      // $(document).on("click", ".nav-link", function (e) {
-      //   // $(".nav-link").css("color", "#ffc62a");
-      //   $(".nav-link").removeClass("active");
-      //   $(this).addClass("active");
-      // });
+      $(document).on("click", ".nav-link", function (e) {
+        // $(".nav-link").css("color", "#ffc62a");
+        $(".nav-link").removeClass("active");
+        $(this).addClass("active");
+      });
 
       $(document).ready(function () {
         Swal.fire({

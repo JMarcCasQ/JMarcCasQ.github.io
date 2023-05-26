@@ -85,7 +85,8 @@ p{
 }
 
 .big-card{
-  width: 20vmin;
+  /* width: 15vmin; */
+  width: 150px;
   border-radius: 2vmin;
 }
 .card{
@@ -128,7 +129,7 @@ p{
   transform: translate(75%, 16%) rotate(24deg);
 }
 img{
-  width: 100%;
+  width: auto;
   height: 100%;
   object-fit: cover;
   border-radius: 2vmin;
